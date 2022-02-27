@@ -16,8 +16,7 @@ ReactDOM.render(
         <Route path="privacy" element={<Privacy />} />
         <Route path="ddi" element={<DataDeletionInstruction />} />
       </Routes>
-      <App />
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
