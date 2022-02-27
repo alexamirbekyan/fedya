@@ -10,6 +10,7 @@ function App() {
         <p>
           Fedya
         </p>
+        <span>v.2</span>
       </header>
     </div>
   );
