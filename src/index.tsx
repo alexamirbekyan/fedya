@@ -3,20 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 
 import Privacy from "./Privacy";
 import DataDeletionInstruction from "./DataDeletionInstruction";
 
+const getRoutePrefix = (): string => {
+  return process.env.NODE_ENV === 'production' ? '/fedya' : '/';
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/fedya" element={<App />} />
-        <Route path="/fedya/privacy" element={<Privacy />} />
-        <Route path="/fedya/ddi" element={<DataDeletionInstruction />} />
+        <Route path={getRoutePrefix()} element={<App />} />
+        <Route path={`${getRoutePrefix()}/privacy`} element={<Privacy />} />
+        <Route path={`${getRoutePrefix()}/ddi`} element={<DataDeletionInstruction />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
