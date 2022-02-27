@@ -12,9 +12,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/ddi" element={<DataDeletionInstruction />} />
+        <Route path="/fedya" element={<App />} />
+        <Route path="/fedya/privacy" element={<Privacy />} />
+        <Route path="/fedya/ddi" element={<DataDeletionInstruction />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
