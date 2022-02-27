@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fedya/static/css/main.073c9b0a.css",
-    "main.js": "/fedya/static/js/main.ede19334.js",
+    "main.js": "/fedya/static/js/main.d0b0bedd.js",
     "static/js/787.c48b3b97.chunk.js": "/fedya/static/js/787.c48b3b97.chunk.js",
     "static/media/logo.svg": "/fedya/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/fedya/index.html",
     "main.073c9b0a.css.map": "/fedya/static/css/main.073c9b0a.css.map",
-    "main.ede19334.js.map": "/fedya/static/js/main.ede19334.js.map",
+    "main.d0b0bedd.js.map": "/fedya/static/js/main.d0b0bedd.js.map",
     "787.c48b3b97.chunk.js.map": "/fedya/static/js/787.c48b3b97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ede19334.js"
+    "static/js/main.d0b0bedd.js"
   ]
 }
