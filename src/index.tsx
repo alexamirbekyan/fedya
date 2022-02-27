@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Privacy from "./Privacy";
+import DataDeletionInstruction from "./DataDeletionInstruction";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="ddi" element={<DataDeletionInstruction />} />
+      </Routes>
+      <App />
+    </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );
