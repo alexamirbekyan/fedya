@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Link} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+import Privacy from "./pages/Privacy";
+import DataDeletionInstruction from "./pages/DataDeletionInstruction";
+import Home from "./pages/Home";
+import Auth from "./pages/Auth";
+import DataDeletionRequest from "./pages/DataDeletionRequest";
+import DeAuthorize from "./pages/Deauthorize";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fedya
-        </p>
-        <span>v.2</span>
-
-        <div>
-          <Link to={'/privacy'}>Privacy</Link>
-          <Link to={'/ddi'}>DDI</Link>
-        </div>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/ddi" element={<DataDeletionInstruction />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/deauth" element={<DeAuthorize />} />
+        <Route path="/ddr" element={<DataDeletionRequest />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
