@@ -13,8 +13,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="privacy" element={<Privacy />} />
-        <Route path="ddi" element={<DataDeletionInstruction />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/ddi" element={<DataDeletionInstruction />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
